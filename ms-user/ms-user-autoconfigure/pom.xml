@@ -28,11 +28,13 @@
         </dependency>
         <!-- 一些可选的、但强烈建议使用的注解解析器 -->
         <dependency>
+<!--            可以帮助idea提示有哪些配置项可配置-->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
         <dependency>
+<!--            编译阶段生成 @Conditional 注解标注的过滤信息到一个文件中，这样启动时可以快速筛选 可以加快启动速度-->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure-processor</artifactId>
             <optional>true</optional>
