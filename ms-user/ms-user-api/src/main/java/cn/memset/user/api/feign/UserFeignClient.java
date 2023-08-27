@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+//类似thrift定义接口  这里定义接口信息,ms-user-web模块中实现该接口写具体的接口实现
 @FeignClient(name = "ms-user",
         url = "${cnmemset.ms-user.url:127.0.0.1:8080}",
         fallbackFactory = UserFeignClient.UserFallbackFactory.class)
